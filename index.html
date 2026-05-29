@@ -705,23 +705,44 @@
         document.getElementById('sim-conduta').innerText = conduta;
     }
 
+    // Import Supabase CDN dynamically and initialize client
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+    const supabaseUrl = "https://gifztywicarguetvtukt.supabase.co";
+    const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdpZnp0eXdpY2FyZ3VldHZ0dWt0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk0NjY4MzUsImV4cCI6MjA5NTA0MjgzNX0.dMqH8K_zMIKab_qwmPFfrdYZl7qGPTlR37qmrAstyVI";
+    const supabaseClient = window.supabase.createClient(supabaseUrl, supabaseKey);
+
     // Lead Capture Submission Logic
-    document.getElementById('lead-form').addEventListener('submit', (e) => {
+    document.getElementById('lead-form').addEventListener('submit', async (e) => {
         e.preventDefault();
+        
+        const nome = document.getElementById('input-name').value;
+        const email = document.getElementById('input-email').value;
+        const whatsapp = document.getElementById('input-phone').value;
         
         const modal = document.getElementById('success-modal');
         const card = document.getElementById('success-card');
         
-        // Show success modal
-        modal.classList.remove('opacity-0', 'pointer-events-none');
-        setTimeout(() => {
-            card.classList.remove('scale-95');
-        }, 50);
+        try {
+            // Save lead to Supabase database
+            const { error } = await supabaseClient.from('leads').insert([{ nome, email, whatsapp }]);
+            if (error) throw error;
+            
+            // Show success modal on successful insertion
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            setTimeout(() => {
+                card.classList.remove('scale-95');
+            }, 50);
 
-        // Redirect to builder after 3 seconds
-        setTimeout(() => {
-            window.location.href = 'https://amora.hublumi.com';
-        }, 3000);
+            // Redirect to builder after 3 seconds
+            setTimeout(() => {
+                window.location.href = 'https://amora.hublumi.com';
+            }, 3000);
+        } catch (err) {
+            console.error('Error inserting lead to Supabase:', err);
+            alert('Erro ao registrar lead no servidor. Por favor, tente novamente!');
+        }
     });
 
     // Initialize Simulator Values on Load
