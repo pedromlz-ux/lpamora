@@ -66,7 +66,7 @@
 <!-- Sticky Header (Floating, Rounded & Glassmorphic) -->
 <header class="fixed top-4 left-1/2 -translate-x-1/2 w-[92%] max-w-6xl z-50 bg-white/70 backdrop-blur-xl border border-slate-200/40 py-2.5 px-6 md:px-10 flex items-center justify-between shadow-lg shadow-slate-200/20 rounded-full">
     <div class="flex items-center gap-3">
-        <img src="./logo-black.svg" alt="Amora Logo" class="h-[38px] object-contain" />
+        <img src="./public/logo-black.svg" alt="Amora Logo" class="h-[38px] object-contain" />
     </div>
     
     <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-650">
@@ -128,36 +128,36 @@
 
         <!-- Right Column: Conversion Capture Form -->
         <div class="w-full lg:w-[460px] shrink-0 relative z-10">
-            <div class="bg-white border border-slate-100 rounded-3xl p-8 shadow-xl shadow-slate-200/40 flex flex-col gap-6 relative">
+            <div class="bg-white/80 backdrop-blur-md border border-slate-200/50 rounded-[2rem] p-8 shadow-2xl shadow-slate-250/20 flex flex-col gap-6 relative">
                 
                 <div class="text-left space-y-1">
-                    <h3 class="font-display font-extrabold text-xl text-slate-950">Acesse a Plataforma</h3>
-                    <p class="text-xs text-slate-500">Registre-se e receba suporte e acesso imediato para embasar suas condutas.</p>
+                    <h3 class="font-display font-black text-xl text-slate-900 tracking-tight">Garanta Seu Acesso</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Cadastre-se para experimentar o Builder de Condutas Clínicas baseadas na TACO.</p>
                 </div>
 
                 <!-- Form -->
                 <form id="lead-form" class="space-y-4">
                     <div>
-                        <label class="block text-xs font-bold text-slate-750 text-slate-700 mb-1.5 uppercase tracking-wide">Nome Completo</label>
+                        <label class="block text-[10px] font-bold text-slate-500 mb-1.5 uppercase tracking-wider">Nome Completo</label>
                         <div class="relative">
                             <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-lg">person</span>
-                            <input type="text" required placeholder="Ex: Dr. Pedro Miguel" class="w-full bg-slate-50/50 border border-slate-100 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 rounded-xl py-3 pl-11 pr-4 text-slate-900 placeholder:text-slate-400/80 outline-none text-sm transition-all" id="input-name" />
+                            <input type="text" required placeholder="Ex: Dr. Pedro Miguel" class="w-full bg-slate-50/50 border border-slate-200 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 rounded-xl py-3 pl-11 pr-4 text-slate-900 placeholder:text-slate-400/80 outline-none text-sm transition-all" id="input-name" />
                         </div>
                     </div>
 
                     <div>
-                        <label class="block text-xs font-bold text-slate-755 text-slate-700 mb-1.5 uppercase tracking-wide">E-mail Profissional / Acadêmico</label>
+                        <label class="block text-[10px] font-bold text-slate-500 mb-1.5 uppercase tracking-wider">E-mail Profissional / Acadêmico</label>
                         <div class="relative">
                             <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-lg">mail</span>
-                            <input type="email" required placeholder="exemplo@clinica.com" class="w-full bg-slate-50/50 border border-slate-100 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 rounded-xl py-3 pl-11 pr-4 text-slate-900 placeholder:text-slate-400/80 outline-none text-sm transition-all" id="input-email" />
+                            <input type="email" required placeholder="exemplo@clinica.com" class="w-full bg-slate-50/50 border border-slate-200 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 rounded-xl py-3 pl-11 pr-4 text-slate-900 placeholder:text-slate-400/80 outline-none text-sm transition-all" id="input-email" />
                         </div>
                     </div>
 
                     <div>
-                        <label class="block text-xs font-bold text-slate-760 text-slate-700 mb-1.5 uppercase tracking-wide">WhatsApp / Telefone</label>
+                        <label class="block text-[10px] font-bold text-slate-500 mb-1.5 uppercase tracking-wider">WhatsApp / Telefone</label>
                         <div class="relative">
                             <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-lg">call</span>
-                            <input type="tel" required placeholder="(11) 99999-9999" class="w-full bg-slate-50/50 border border-slate-100 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 rounded-xl py-3 pl-11 pr-4 text-slate-900 placeholder:text-slate-400/80 outline-none text-sm transition-all" id="input-phone" />
+                            <input type="tel" required placeholder="(11) 99999-9999" class="w-full bg-slate-50/50 border border-slate-200 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 rounded-xl py-3 pl-11 pr-4 text-slate-900 placeholder:text-slate-400/80 outline-none text-sm transition-all" id="input-phone" />
                         </div>
                     </div>
 
@@ -167,7 +167,7 @@
                     </button>
                 </form>
 
-                <p class="text-[10px] text-slate-400 text-center leading-normal">
+                <p class="text-[9px] text-slate-400 text-center leading-normal">
                     Seus dados estão protegidos em conformidade com as diretrizes da LGPD médica e de privacidade.
                 </p>
             </div>
@@ -245,9 +245,9 @@
                 <div class="w-12 h-12 rounded-2xl bg-brand-50 flex items-center justify-center text-brand-600 mb-6">
                     <span class="material-symbols-outlined text-2xl font-bold">nutrition</span>
                 </div>
-                <h3 class="font-display font-bold text-lg text-slate-900 mb-3">Tabelas TACO, IBGE e USDA</h3>
+                <h3 class="font-display font-bold text-lg text-slate-900 mb-3">Tabela Oficial TACO</h3>
                 <p class="text-sm text-slate-500 leading-relaxed mb-6">
-                    Crie planos alimentares com dados nutricionais validados por universidades brasileiras de ponta. Tenha o cálculo preciso de micronutrientes, aminoácidos e fibras em segundos.
+                    Crie planos alimentares com dados nutricionais validados oficialmente pela Tabela Brasileira de Composição de Alimentos (TACO). Tenha o cálculo preciso de micronutrientes, aminoácidos e fibras em segundos.
                 </p>
             </div>
 
@@ -341,38 +341,285 @@
         </div>
     </section>
 
+    <style>
+        @keyframes scroll-vertical {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-50%);
+            }
+        }
+        .animate-scroll-y-1 {
+            animation: scroll-vertical 16s linear infinite;
+        }
+        .animate-scroll-y-2 {
+            animation: scroll-vertical 20s linear infinite;
+        }
+        .animate-scroll-y-3 {
+            animation: scroll-vertical 18s linear infinite;
+        }
+        .testimonial-card {
+            background-color: white;
+            border: 1px solid rgba(241, 245, 249, 1);
+            padding: 2rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(124, 58, 237, 0.08), 0 10px 10px -5px rgba(124, 58, 237, 0.04);
+        }
+    </style>
+
     <!-- Testimonials Section -->
-    <section id="depoimentos" class="py-20 px-6 md:px-12 max-w-7xl mx-auto w-full">
-        <div class="text-center max-w-2xl mx-auto mb-16 space-y-2">
+    <section id="depoimentos" class="py-20 px-6 md:px-12 max-w-7xl mx-auto w-full relative overflow-hidden">
+        <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
             <span class="text-brand-600 text-xs font-extrabold uppercase tracking-widest">COMPARTILHADO POR QUEM VIVE A PRÁTICA</span>
             <h2 class="font-display text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">O que dizem os especialistas da área</h2>
+            <p class="text-xs text-slate-500 max-w-md mx-auto">
+                Nutricionistas, médicos e pesquisadores que comprovaram a eficiência científica do Amora na prática clínica.
+            </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Testimonial 1 -->
-            <div class="bg-white border border-slate-100 p-8 rounded-3xl glow-effect flex flex-col gap-6">
-                <p class="text-sm text-slate-500 leading-relaxed italic">
-                    "O Amora mudou drasticamente a forma como oriento as condutas em minha residência médica em nutrição clínica. A integração direta dos macronutrientes recomendados com as patologias dos pacientes baseada nas diretrizes internacionais é fantástica!"
-                </p>
-                <div class="flex items-center gap-3">
-                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPA6ybAh7MZgxmAnwD6i26AyIBQWpMsNLU9fnSL7aXdpNNRLcL7FmKqsm8n_NmZ5a3wJISsqxoXmCQ5opVERUM5COH6lWrxKVyQDN1Tp79jDIXSeZaW9K9LDNG3lw2jzdSMpMg4VzInyJgsG1MKRNfWkxYe6jAB1EV6DaPcRe-KH_CEWEQp8womy40fT6gp8MPoIHRK7h1KDJOqhBmsNxscx3QPiwLwZpK3Lm_CPMDVh29KUjr-x8bmiH452_xo5n291KAzCdQOqpW" alt="Dra. Letícia Lima" class="w-10 h-10 rounded-full object-cover" />
-                    <div>
-                        <h4 class="font-bold text-sm text-slate-900">Dra. Letícia Lima</h4>
-                        <p class="text-[10px] text-slate-400 font-semibold">Nutricionista Clínica em Terapia Intensiva</p>
+        <div class="flex justify-center gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent)] max-h-[640px] overflow-hidden">
+            <!-- Column 1 -->
+            <div class="flex flex-col gap-6 w-full max-w-xs shrink-0">
+                <div class="flex flex-col gap-6 animate-scroll-y-1">
+                    <!-- Set 1 -->
+                    <div class="testimonial-card">
+                        <p class="text-xs text-slate-500 leading-relaxed italic">
+                            "O Amora mudou drasticamente a forma como oriento as condutas em minha residência médica em nutrição clínica. A integração direta dos macronutrientes recomendados com as patologias dos pacientes baseada nas diretrizes internacionais é fantástica!"
+                        </p>
+                        <div class="flex items-center gap-3 mt-5">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=120&auto=format&fit=crop" alt="Dra. Letícia Lima" class="w-8 h-8 rounded-full object-cover shrink-0" />
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Dra. Letícia Lima</h4>
+                                <p class="text-[9px] text-slate-400 font-semibold">Nutricionista Clínica em UTI</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="text-xs text-slate-500 leading-relaxed italic">
+                            "O software traz um rigor científico excelente. A velocidade para planejar a terapia nutricional enteral e parenteral economiza horas de trabalho no dia a dia hospitalar."
+                        </p>
+                        <div class="flex items-center gap-3 mt-5">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=120&auto=format&fit=crop" alt="Dr. Roberto Souza" class="w-8 h-8 rounded-full object-cover shrink-0" />
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Dr. Roberto Souza</h4>
+                                <p class="text-[9px] text-slate-400 font-semibold">Nutrólogo Clínico</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="text-xs text-slate-500 leading-relaxed italic">
+                            "Minha segurança nos primeiros atendimentos clínicos dobrou. Apresentar os gráficos de evolução do paciente na tela gera um valor absurdo na consulta."
+                        </p>
+                        <div class="flex items-center gap-3 mt-5">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=120&auto=format&fit=crop" alt="Beatriz Ramos" class="w-8 h-8 rounded-full object-cover shrink-0" />
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Beatriz Ramos</h4>
+                                <p class="text-[9px] text-slate-400 font-semibold">Residente de Nutrição</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Set 2 (Duplicate for loop) -->
+                    <div class="testimonial-card">
+                        <p class="text-xs text-slate-500 leading-relaxed italic">
+                            "O Amora mudou drasticamente a forma como oriento as condutas em minha residência médica em nutrição clínica. A integração direta dos macronutrientes recomendados com as patologias dos pacientes baseada nas diretrizes internacionais é fantástica!"
+                        </p>
+                        <div class="flex items-center gap-3 mt-5">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=120&auto=format&fit=crop" alt="Dra. Letícia Lima" class="w-8 h-8 rounded-full object-cover shrink-0" />
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Dra. Letícia Lima</h4>
+                                <p class="text-[9px] text-slate-400 font-semibold">Nutricionista Clínica em UTI</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="text-xs text-slate-500 leading-relaxed italic">
+                            "O software traz um rigor científico excelente. A velocidade para planejar a terapia nutricional enteral e parenteral economiza horas de trabalho no dia a dia hospitalar."
+                        </p>
+                        <div class="flex items-center gap-3 mt-5">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=120&auto=format&fit=crop" alt="Dr. Roberto Souza" class="w-8 h-8 rounded-full object-cover shrink-0" />
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Dr. Roberto Souza</h4>
+                                <p class="text-[9px] text-slate-400 font-semibold">Nutrólogo Clínico</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="text-xs text-slate-500 leading-relaxed italic">
+                            "Minha segurança nos primeiros atendimentos clínicos dobrou. Apresentar os gráficos de evolução do paciente na tela gera um valor absurdo na consulta."
+                        </p>
+                        <div class="flex items-center gap-3 mt-5">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=120&auto=format&fit=crop" alt="Beatriz Ramos" class="w-8 h-8 rounded-full object-cover shrink-0" />
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Beatriz Ramos</h4>
+                                <p class="text-[9px] text-slate-400 font-semibold">Residente de Nutrição</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Testimonial 2 -->
-            <div class="bg-white border border-slate-100 p-8 rounded-3xl glow-effect flex flex-col gap-6">
-                <p class="text-sm text-slate-500 leading-relaxed italic">
-                    "Como estudante avançado, o Amora serve de base para meus estudos de caso e avaliações de antropometria. Usar as fontes de evidência oficiais integradas a um laudo clínico profissional facilitou demais a minha rotina prática."
-                </p>
-                <div class="flex items-center gap-3">
-                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1lFwsr6rh34cAa4177Jg4Bph0cDqUcuXFe7CXrp1Mi15h6FHnk5aWc6W-yFvzFLPENzpM_hO6yXqHhHkV474E5pb_am-tDBKu8h3zNyH7zJ_-oPVGY8Kl_bIi6e9b21HxgoUZ3CNbguHcpD3GJTrF94EZCTykX9IG6VWeOUEkLnUxdymeAMBDocE1pAN6C7kEjHCo_BgoCIpFEtG9NlEmCMBy8K9ZyZc66gvC9pH6Bkc6gWYkM821E3LqYM-i5UIHiGA77sarVnQc" alt="Lucas Ferrari" class="w-10 h-10 rounded-full object-cover" />
-                    <div>
-                        <h4 class="font-bold text-sm text-slate-900">Lucas Ferrari</h4>
-                        <p class="text-[10px] text-slate-400 font-semibold">Estudante de Nutrição Clínica & Pesquisador</p>
+            <!-- Column 2 (md:block) -->
+            <div class="hidden md:flex flex-col gap-6 w-full max-w-xs shrink-0">
+                <div class="flex flex-col gap-6 animate-scroll-y-2">
+                    <!-- Set 1 -->
+                    <div class="testimonial-card">
+                        <p class="text-xs text-slate-500 leading-relaxed italic">
+                            "Como estudante avançado, o Amora serve de base para meus estudos de caso e avaliações de antropometria. Usar as fontes de evidência oficiais integradas a um laudo clínico profissional facilitou demais a minha rotina."
+                        </p>
+                        <div class="flex items-center gap-3 mt-5">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=120&auto=format&fit=crop" alt="Lucas Ferrari" class="w-8 h-8 rounded-full object-cover shrink-0" />
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Lucas Ferrari</h4>
+                                <p class="text-[9px] text-slate-400 font-semibold">Estudante de Nutrição & Pesquisador</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="text-xs text-slate-500 leading-relaxed italic">
+                            "Além da nutrição hospitalar, a flexibilidade para calcular o gasto energético com diferentes fórmulas como Harris-Benedict facilitou muito o atendimento clínico integrativo no consultório."
+                        </p>
+                        <div class="flex items-center gap-3 mt-5">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=120&auto=format&fit=crop" alt="Mariana Dias" class="w-8 h-8 rounded-full object-cover shrink-0" />
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Mariana Dias</h4>
+                                <p class="text-[9px] text-slate-400 font-semibold">Nutricionista Clínica</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="text-xs text-slate-500 leading-relaxed italic">
+                            "A facilidade de busca na tabela oficial TACO diretamente pelo sistema sem precisar de planilhas auxiliares é um diferencial fantástico para a acurácia dos planos dietoterápicos."
+                        </p>
+                        <div class="flex items-center gap-3 mt-5">
+                            <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=120&auto=format&fit=crop" alt="Gustavo Silveira" class="w-8 h-8 rounded-full object-cover shrink-0" />
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Gustavo Silveira</h4>
+                                <p class="text-[9px] text-slate-400 font-semibold">Nutricionista Esportivo & Clínico</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Set 2 (Duplicate for loop) -->
+                    <div class="testimonial-card">
+                        <p class="text-xs text-slate-500 leading-relaxed italic">
+                            "Como estudante avançado, o Amora serve de base para meus estudos de caso e avaliações de antropometria. Usar as fontes de evidência oficiais integradas a um laudo clínico profissional facilitou demais a minha rotina."
+                        </p>
+                        <div class="flex items-center gap-3 mt-5">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=120&auto=format&fit=crop" alt="Lucas Ferrari" class="w-8 h-8 rounded-full object-cover shrink-0" />
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Lucas Ferrari</h4>
+                                <p class="text-[9px] text-slate-400 font-semibold">Estudante de Nutrição & Pesquisador</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="text-xs text-slate-500 leading-relaxed italic">
+                            "Além da nutrição hospitalar, a flexibilidade para calcular o gasto energético com diferentes fórmulas como Harris-Benedict facilitou muito o atendimento clínico integrativo no consultório."
+                        </p>
+                        <div class="flex items-center gap-3 mt-5">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=120&auto=format&fit=crop" alt="Mariana Dias" class="w-8 h-8 rounded-full object-cover shrink-0" />
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Mariana Dias</h4>
+                                <p class="text-[9px] text-slate-400 font-semibold">Nutricionista Clínica</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="text-xs text-slate-500 leading-relaxed italic">
+                            "A facilidade de busca na tabela oficial TACO diretamente pelo sistema sem precisar de planilhas auxiliares é um diferencial fantástico para a acurácia dos planos dietoterápicos."
+                        </p>
+                        <div class="flex items-center gap-3 mt-5">
+                            <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=120&auto=format&fit=crop" alt="Gustavo Silveira" class="w-8 h-8 rounded-full object-cover shrink-0" />
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Gustavo Silveira</h4>
+                                <p class="text-[9px] text-slate-400 font-semibold">Nutricionista Esportivo & Clínico</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 3 (lg:block) -->
+            <div class="hidden lg:flex flex-col gap-6 w-full max-w-xs shrink-0">
+                <div class="flex flex-col gap-6 animate-scroll-y-3">
+                    <!-- Set 1 -->
+                    <div class="testimonial-card">
+                        <p class="text-xs text-slate-500 leading-relaxed italic">
+                            "Recomendo o Amora para todos os meus alunos de graduação e pós-graduação. É uma ferramenta pedagógica e técnica fantástica que eleva o rigor dos laudos metabólicos."
+                        </p>
+                        <div class="flex items-center gap-3 mt-5">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=120&auto=format&fit=crop" alt="Dra. Carla Mendes" class="w-8 h-8 rounded-full object-cover shrink-0" />
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Dra. Carla Mendes</h4>
+                                <p class="text-[9px] text-slate-400 font-semibold">Profª Doutora em Nutrição</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="text-xs text-slate-500 leading-relaxed italic">
+                            "Trabalhar com pacientes oncológicos exige precisão cirúrgica na terapia nutricional. O suporte a comorbidades e patologias integradas do Amora é meu braço direito."
+                        </p>
+                        <div class="flex items-center gap-3 mt-5">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=120&auto=format&fit=crop" alt="Patricia Antunes" class="w-8 h-8 rounded-full object-cover shrink-0" />
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Patricia Antunes</h4>
+                                <p class="text-[9px] text-slate-400 font-semibold">Nutricionista Oncológica</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="text-xs text-slate-500 leading-relaxed italic">
+                            "A interface é extremamente fluida, rápida e responsiva. Meus pacientes adoram receber os relatórios de evolução automatizados e claros."
+                        </p>
+                        <div class="flex items-center gap-3 mt-5">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=120&auto=format&fit=crop" alt="Felipe Albuquerque" class="w-8 h-8 rounded-full object-cover shrink-0" />
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Felipe Albuquerque</h4>
+                                <p class="text-[9px] text-slate-400 font-semibold">Nutricionista Clínico & Esportivo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Set 2 (Duplicate for loop) -->
+                    <div class="testimonial-card">
+                        <p class="text-xs text-slate-500 leading-relaxed italic">
+                            "Recomendo o Amora para todos os meus alunos de graduação e pós-graduação. É uma ferramenta pedagógica e técnica fantástica que eleva o rigor dos laudos metabólicos."
+                        </p>
+                        <div class="flex items-center gap-3 mt-5">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=120&auto=format&fit=crop" alt="Dra. Carla Mendes" class="w-8 h-8 rounded-full object-cover shrink-0" />
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Dra. Carla Mendes</h4>
+                                <p class="text-[9px] text-slate-400 font-semibold">Profª Doutora em Nutrição</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="text-xs text-slate-500 leading-relaxed italic">
+                            "Trabalhar com pacientes oncológicos exige precisão cirúrgica na terapia nutricional. O suporte a comorbidades e patologias integradas do Amora é meu braço direito."
+                        </p>
+                        <div class="flex items-center gap-3 mt-5">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=120&auto=format&fit=crop" alt="Patricia Antunes" class="w-8 h-8 rounded-full object-cover shrink-0" />
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Patricia Antunes</h4>
+                                <p class="text-[9px] text-slate-400 font-semibold">Nutricionista Oncológica</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="text-xs text-slate-500 leading-relaxed italic">
+                            "A interface é extremamente fluida, rápida e responsiva. Meus pacientes adoram receber os relatórios de evolução automatizados e claros."
+                        </p>
+                        <div class="flex items-center gap-3 mt-5">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=120&auto=format&fit=crop" alt="Felipe Albuquerque" class="w-8 h-8 rounded-full object-cover shrink-0" />
+                            <div>
+                                <h4 class="font-bold text-xs text-slate-900">Felipe Albuquerque</h4>
+                                <p class="text-[9px] text-slate-400 font-semibold">Nutricionista Clínico & Esportivo</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -381,16 +628,30 @@
 
     <!-- Bottom Lead Capture Banner -->
     <section class="py-16 px-6 md:px-12 max-w-5xl mx-auto w-full text-center">
-        <div class="bg-gradient-to-tr from-brand-700 to-indigo-900 rounded-[2.5rem] p-12 text-white flex flex-col items-center gap-6 relative overflow-hidden">
+        <div class="relative overflow-hidden bg-slate-950 border border-slate-800/80 rounded-[2.5rem] p-12 md:p-16 text-white flex flex-col items-center gap-6 shadow-2xl shadow-brand-950/40 ring-1 ring-white/5">
+            <!-- Decorative Ambient Glow Spots -->
             <div class="absolute inset-0 bg-grid-pattern opacity-[0.03] pointer-events-none"></div>
-            <h2 class="font-display font-black text-3xl md:text-4xl max-w-xl leading-tight">Leve rigor científico de ponta para seus atendimentos.</h2>
-            <p class="text-sm text-brand-100 max-w-md leading-relaxed">
-                Junte-se a nutricionistas e estudantes que utilizam a precisão do Amora para embasar diagnósticos e planejamentos dietoterápicos diariamente.
+            <div class="absolute -top-24 -left-24 w-80 h-80 bg-brand-500/20 rounded-full blur-[100px] pointer-events-none"></div>
+            <div class="absolute -bottom-24 -right-24 w-80 h-80 bg-indigo-500/20 rounded-full blur-[100px] pointer-events-none"></div>
+            
+            <!-- Subtle Top Badge -->
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-350 text-[10px] font-extrabold uppercase tracking-wider text-purple-300">
+                <span class="w-1.5 h-1.5 rounded-full bg-purple-400 animate-pulse"></span>
+                PRESCRIÇÃO BASEADA EM EVIDÊNCIAS
+            </span>
+
+            <h2 class="font-display font-black text-3xl md:text-5xl max-w-2xl leading-[1.1] tracking-tight relative z-10">
+                Leve rigor científico de ponta para seus atendimentos.
+            </h2>
+            
+            <p class="text-sm text-slate-400 max-w-lg leading-relaxed relative z-10">
+                Junte-se a nutricionistas e estudantes que utilizam a precisão do Amora para embasar diagnósticos e planejamentos dietoterápicos diariamente com a tabela TACO.
             </p>
-            <div class="pt-2">
-                <a href="#lead-form" class="px-8 py-4 rounded-full bg-white text-brand-700 font-bold hover:bg-brand-50 active:scale-95 transition-all inline-flex items-center gap-2 shadow-xl shadow-brand-900/30">
+            
+            <div class="pt-4 relative z-10">
+                <a href="#lead-form" class="px-8 py-4 rounded-full bg-white text-slate-950 font-bold hover:bg-slate-50 hover:scale-[1.03] active:scale-95 transition-all inline-flex items-center gap-2 shadow-xl shadow-brand-950/50">
                     <span>Começar de Graça Agora</span>
-                    <span class="material-symbols-outlined text-sm font-bold">arrow_forward</span>
+                    <span class="material-symbols-outlined text-sm font-bold text-brand-600">arrow_forward</span>
                 </a>
             </div>
         </div>
@@ -402,7 +663,7 @@
 <footer class="border-t border-slate-100 bg-white py-12 px-6 md:px-12 text-center text-slate-400 text-xs">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div class="flex items-center gap-3">
-            <img src="./logo-horizontal.svg" alt="Amora Logo" class="h-[52px] object-contain" />
+            <img src="./public/logo-horizontal.svg" alt="Amora Logo" class="h-[62px] object-contain" />
         </div>
         <p class="text-slate-400">© 2026 Amora Inc. Todos os direitos reservados. Nutrição e Biotecnologia Baseada em Evidências.</p>
     </div>
